@@ -1,68 +1,104 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ecommerce  Project
 
-## Available Scripts
+  
+ # ///////GIFS ////// 
+  
+ # Introduction to project and functionality 
+ 
 
-In the project directory, you can run:
+	  This is an  e-commerce application similar to Shopify using React, Redux, React Hooks, React Router, GraphQL, Context API,  Firebase, Redux-Saga, Stripe + more. 
 
-### `yarn start`
+	  This is going to be a full stack app (MERN stack), using Firebase and Heroku hosting
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+	   Deployment is on *****.........
+	   
+	   
+   
+   
+   ## Simple Devops Setup 
+                                      
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+	Simple Devops Setup. (Roughly)
 
-### `yarn test`
+	 Dev -> pre hook ->  Github -> CI/CD (gitlab) 
+	  ->  Build stage   (Project build (minifying etc happens here))
+	  ->  Unit-Testing 
+	  ->  Staging env -> Production
+	  ->  Deployed to ***** -> (Live in production) 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+	Sentry and Logrocket monitoring 
+	-> Integration with github, bugfixes with case id’s devbranch 
+	-> master
+	-> trigger devops setup above.          
 
-### `yarn build`
+   
+   
+ ## Architecture (Roughly)
+ 
+	- React Basics
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	- React Router
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+	- Redux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+	- Redux Saga
 
-### `yarn eject`
+	- Asynchronous Redux
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+	- React Hooks
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+	- Context API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+	- React Suspense + React Lazy
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+	- Firebase
 
-## Learn More
+	- Stripe API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+	- Styled-Components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	- GraphQL
 
-### Code Splitting
+	- Apollo
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+	- PWAs
 
-### Analyzing the Bundle Size
+	- React Performance
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+	- React Design Patterns
 
-### Making a Progressive Web App
+	- Testing with Jest, Enzyme and Snapshot testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+	- React Best Practices
 
-### Advanced Configuration
+	- Persistance + Session Storage
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+	- State Normalization
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# DEVLOG 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
