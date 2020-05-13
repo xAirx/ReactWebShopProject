@@ -6,7 +6,7 @@ import './homepage.styles.scss';
 function App() {
   return (
     <div>
-      <h1>Webshop - Project - Test-testx</h1>
+      <h1>Webshop - Project - Test-testxx</h1>
       <Homepage />
     </div>
   );
