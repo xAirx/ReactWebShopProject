@@ -17,9 +17,7 @@ staging:
         - dpl --provider=heroku --app=$HEROKU_APP_STAGING --api-key=$HEROKU_API_KEY
     only:
         - staging
-    except:
-       changes:
-        - "*.md"
+
 
 production:
     type: deploy
@@ -29,6 +27,4 @@ production:
         - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY
     only:
         - master
-    except:
-       changes:
-        - "*.md"
+  
