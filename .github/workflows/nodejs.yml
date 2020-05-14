@@ -19,7 +19,10 @@ jobs:
       run: yarn install
     - name: Unit tests - yarn test
       run: yarn test
-    - name: Build and push
+    - name: Deploy to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-       run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git origin/master:master
+        HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+      if: github.ref == 'refs/heads/master' && job.status == 'success'
+      run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git origin/master:master
+
