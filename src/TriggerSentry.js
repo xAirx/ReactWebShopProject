@@ -1,21 +1,15 @@
-import React from 'react'
-const Sentry = require('./log');
+// //// IF YOU COMMIT THIS FILE SENTRY WILL TRIGGER
+// //// THE CI BUILD WILL FAIL 150%, BUT SENTRY WILL SEND AN EMAIL.
 
-function TriggerSentry() {
+/* const Sentry = require('./log');
 
-    // send an event to Sentry
+// send an event to Sentry
 Sentry.captureMessage('my message', 'warning');
 
 // sent an error - automatically sends a callstack
 try {
-	functionThatFailed()
+  functionThatFailed();
 } catch (error) {
-	Sentry.captureException(error);
+  Sentry.captureException(error);
 }
-
-    return (
-        <h1> Trigger Sentry Component </h1>
-    )
-}
-
-export default TriggerSentry
+ */
