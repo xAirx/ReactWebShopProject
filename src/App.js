@@ -2,16 +2,14 @@ import React from 'react';
 import './App.css';
 import Homepage from './HomepageComponent';
 import './homepage.styles.scss';
-/* import TriggerSentry from './TriggerSentry';
- */
-
+import TriggerSentry from './TriggerSentry';
 
 function App() {
   return (
     <div>
       <h1>Webshop - Project</h1>
       <Homepage />
-   {/*    <TriggerSentry /> */}
+      <TriggerSentry />
     </div>
   );
 }
