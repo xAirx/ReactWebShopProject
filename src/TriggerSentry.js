@@ -8,7 +8,9 @@ Sentry.captureMessage('my message', 'warning');
 
 // sent an error - automatically sends a callstack
 try {
-	functionThatFailed();
+	functionThatFailed() {
+        return console.log("test")
+    }
 } catch (error) {
 	Sentry.captureException(error);
 }
