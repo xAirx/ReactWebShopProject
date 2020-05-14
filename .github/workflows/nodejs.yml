@@ -1,7 +1,7 @@
 
 name: Push Container to Heroku
 
-on: 
+on:
   push:
     branches:
       - master
@@ -12,16 +12,18 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Login to Heroku Container registry
-      env: 
+      env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: heroku container:login 
-    - name: Test with NPM test
-      run: npm test
+      run: heroku container:login
+    - name: Install Dependencies - yarn install
+      run: yarn install
+    - name: Unit tests - yarn test
+      run: yarn test
     - name: Build and push
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web 
+      run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
     - name: Release
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web 
+      run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web
