@@ -17,7 +17,7 @@ try {
 function App() {
   return (
     <div>
-      <h1>Webshop - Project - Test-test</h1>
+      <h1>Webshop - Project</h1>
       <Homepage />
     </div>
   );
