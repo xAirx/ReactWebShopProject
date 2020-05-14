@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Homepage from './HomepageComponent';
 import './homepage.styles.scss';
-const Sentry = require('./log');
+const Sentry = require('./log.js');
 
 // send an event to Sentry
 Sentry.captureMessage('my message', 'warning');
