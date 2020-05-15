@@ -13,7 +13,7 @@ Sentry.init({ dsn: 'https://0279e0a3aae840339f4a711848494919@o392672.ingest.sent
 function App() {
   return (
     <div>
-      <h1>Webshop - Project</h1>
+      <h1>Webshop - Projectx</h1>
       <Homepage />
     </div>
   );
