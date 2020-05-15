@@ -34,16 +34,16 @@ LogRocket.getSessionURL(sessionURL => {
 Sentry.init({ dsn: 'https://0279e0a3aae840339f4a711848494919@o392672.ingest.sentry.io/5240589' });
 
 function App() {
-  /*   const methodDoesNotExist = () => {
+  const methodDoesNotExist = () => {
     console.log('wtf');
     methodExistsNot();
-  }; */
+  };
 
   return (
     <div>
       <h1>Webshop - MasterBranch</h1>
       <Homepage />
-      {/* <button onClick={methodDoesNotExist}>Test Sentry</button>; */}
+      <button onClick={methodDoesNotExist}>Test Sentry</button>;
     </div>
   );
 }
