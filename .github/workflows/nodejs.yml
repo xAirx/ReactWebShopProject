@@ -29,14 +29,14 @@ jobs:
       
     - name: Set Dev Environment
       if: github.ref == 'refs/heads/development'
-      run: echo "::set-env name=ENVIRONMENT::staging"
+      run: echo "::set-env name=ENVIRONMENT::development", echo "::set-env name=GitName::development"
 
     - name: Set Production Environment
       if: github.ref == 'refs/heads/master'
-      run: echo "::set-env name=ENVIRONMENT::production"
+      run: echo "::set-env name=ENVIRONMENT::production", echo "::set-env name=GitName::master"
 
     - name: Push to Heroku
-      run: git push --force https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git origin/master:master
+      run: git push --force https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git origin/$Gitname:master
 
 
 
