@@ -4,6 +4,31 @@ name: Push Container to Heroku
 on:
   push:
     branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Login to Heroku Container registry
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:login
+    - name: Install Dependencies - yarn install
+      run: yarn install
+    - name: Unit tests - yarn test
+      run: yarn test
+    - name: Deploy to Heroku
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME_DEVELOPMENT }}
+      if: github.ref == 'refs/heads/master' && job.status == 'success'
+      run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME_DEVELOPMENT.git origin/master:master
+
+on:
+  push:
+    branches:
       - master
 
 jobs:
@@ -25,4 +50,3 @@ jobs:
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       if: github.ref == 'refs/heads/master' && job.status == 'success'
       run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git origin/master:master
-
