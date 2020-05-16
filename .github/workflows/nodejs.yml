@@ -64,4 +64,5 @@ jobs:
           printenv
 
       - name: Push to Heroku
+
         run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git origin/$BRANCH:master
