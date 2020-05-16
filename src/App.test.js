@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders h1', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Webshop - Developmentx/);
+  const linkElement = getByText(/Webshop - DevelopmentServerx/);
   expect(linkElement).toBeInTheDocument();
 });
