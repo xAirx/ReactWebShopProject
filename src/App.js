@@ -43,7 +43,7 @@ function App() {
     <div>
       <h1>Webshop - DevelopmentServer</h1>
       <Homepage />
-      <button onClick={methodDoesNotExist}>Test Sentry</button>;
+      <button onClick={methodDoesNotExist}>Test Sentry</button>
     </div>
   );
 }
