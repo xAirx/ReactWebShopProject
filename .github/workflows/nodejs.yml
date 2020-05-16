@@ -27,11 +27,41 @@ jobs:
 
       - name: Set Dev Environment
         if: github.ref == 'refs/heads/development'
-        run: echo "::set-env name=ENVIRONMENT::development"
+        uses: allenevans/set-env@v1.0.0
+        with:
+          ENVIRONMENT: "development"
+          BRANCH: "development"
+
+      - name: Printdevenv
+        if: github.ref == 'refs/heads/development'
+        run: |
+          echo "ENVIRONMENT=${ENVIRONMENT}"
+          printenv
+
+      - name: Printdevbranchenv
+        if: github.ref == 'refs/heads/development'
+        run: |
+          echo "BRANCH=${BRANCH}"
+          printenv
 
       - name: Set Production Environment
         if: github.ref == 'refs/heads/master'
-        run: echo "::set-env name=ENVIRONMENT::production"
+        uses: allenevans/set-env@v1.0.0
+        with:
+          ENVIRONMENT: "production"
+          BRANCH: "master"
+
+      - name: Printproductionenv
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo "ENVIRONMENT=${ENVIRONMENT}"
+          printenv
+
+      - name: Printprodbranchenv
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo "BRANCH=${BRANCH}"
+          printenv
 
       - name: Push to Heroku
-        run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git origin/github.ref
+        run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git origin/$BRANCH:master
