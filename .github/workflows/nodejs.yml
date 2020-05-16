@@ -35,4 +35,4 @@ jobs:
 
 
       - name: Push to Heroku
-        run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git github.ref:refs/heads/$BRANCH
+        run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git $BRANCH:refs/heads/$BRANCH 
