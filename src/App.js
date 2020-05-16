@@ -35,7 +35,7 @@ Sentry.init({ dsn: 'https://0279e0a3aae840339f4a711848494919@o392672.ingest.sent
 
 function App() {
   const methodDoesNotExist = () => {
-    console.log('wtfs');
+    console.log('wtfsss');
     methodExistsNot();
   };
 
