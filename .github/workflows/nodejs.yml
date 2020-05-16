@@ -34,4 +34,4 @@ jobs:
         run: echo "::set-env name=ENVIRONMENT::production"
 
       - name: Push to Heroku
-        run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git origin/github.ref
+        run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/webshopproject-$ENVIRONMENT.git github.ref:refs/heads/master
