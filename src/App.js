@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div>
-      <h1>Webshop - MasterBranch</h1>
+      <h1>Webshop - Development</h1>
       <Homepage />
       <button onClick={methodDoesNotExist}>Test Sentry</button>;
     </div>
