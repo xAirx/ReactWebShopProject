@@ -12,6 +12,9 @@ import * as Sentry from '@sentry/browser';
 import LogRocket from 'logrocket';
 import setupLogRocketReact from 'logrocket-react';
 import Homepage from './HomepageComponent';
+import SentryComponent from './SentryButton';
+
+require('dotenv').config();
 
 LogRocket.init('8ckc5m/my-master-project-dev');
 // after calling LogRocket.init()
@@ -32,28 +35,24 @@ LogRocket.getSessionURL(sessionURL => {
 /* setupLogRocketReact(LogRocket);
  */
 
-  Sentry.init({
-    dsn: 'https://0279e0a3aae840339f4a711848494919@o392672.ingest.sentry.io/5240589',
-    beforeSend(event, hint) {
-      // Check if it is an exception, and if so, show the report dialog
-      if (event.exception) {
-        Sentry.showReportDialog({ eventId: event.event_id });
-      }
-      return event;
+Sentry.init({
+  dsn: 'https://0279e0a3aae840339f4a711848494919@o392672.ingest.sentry.io/5240589',
+  beforeSend(event, hint) {
+    // Check if it is an exception, and if so, show the report dialog
+    if (event.exception) {
+      Sentry.showReportDialog({ eventId: event.event_id });
     }
-  });
+    return event;
+  },
+});
 
 function App() {
-  const methodDoesNotExist = () => {
-    console.log('wtfsss');
-    methodExistsNot();
-  };
-
+  /* console.log(process.env.NODE_ENV); */
   return (
     <div>
       <h1>Webshop - DevelopmentServer</h1>
       <Homepage />
-      <button onClick={methodDoesNotExist}>Test Sentry</button>
+      {process.env.NODE_ENV === 'development' ? <SentryComponent /> : ''}
     </div>
   );
 }
