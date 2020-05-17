@@ -47,7 +47,8 @@ Sentry.init({
 });
 
 function App() {
-  /* console.log(process.env.NODE_ENV); */
+  console.log(process.env.NODE_ENV);
+  console.log(process.env.SERVERMODE);
   return (
     <div>
       <h1>Webshop - DevelopmentServer</h1>
