@@ -52,7 +52,9 @@ function App() {
     <div>
       <h1>Webshop - DevelopmentServer</h1>
       <Homepage />
-      {process.env.NODE_ENV === 'development' ? <SentryComponent /> : ''}
+      {/*       {process.env.NODE_ENV === 'development' ? <SentryComponent /> : ''}
+       */}
+      {process.env.SERVERMODE === 'development' ? <SentryComponent /> : ''}
     </div>
   );
 }
