@@ -57,7 +57,7 @@ function App() {
     <div>
       <h1>Webshop - Production</h1>
       <Homepage />
-      {/*       {process.env.NODE_ENV === 'development' ? <SentryComponent /> : ''}
+      {/*       {process.env.NODE_ENV === 'development' ? <SentryComponent /> : 'x'}
        */}
       {process.env.REACT_APP_SERVER_MODE === 'development' ? <SentryComponent /> : ''}
     </div>
