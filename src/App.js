@@ -51,7 +51,7 @@ Sentry.init({
 });
 
 function App() {
-  console.log('SERVERMODE:', process.env);
+  console.log('REACT_APP_SERVER_MODE', process.env.REACT_APP_SERVER_MODE);
   return (
     <div>
       <h1>Webshop - DevelopmentServer</h1>
