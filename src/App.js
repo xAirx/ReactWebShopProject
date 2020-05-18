@@ -43,7 +43,7 @@ LogRocket.getSessionURL(sessionURL => {
 Sentry.init({
   dsn: 'https://0279e0a3aae840339f4a711848494919@o392672.ingest.sentry.io/5240589',
   beforeSend(event, hint) {
-    // Check if it is an exception, and if so, show the report dialogx
+    // Check if it is an exception, and if so, show the report dialogxx
     if (event.exception) {
       Sentry.showReportDialog({ eventId: event.event_id });
     }
