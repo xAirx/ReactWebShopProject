@@ -1,4 +1,5 @@
 import React from 'react';
+
 // we are using a functional component here since we arent going to have any state in this component or lifecycle methods.
 const HomePage = () => (
   <div className="homepage">
