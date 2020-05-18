@@ -6,7 +6,7 @@ import App from './App';
 test('renders h1', () => {
   const { getByText } = render(<App />);
 
-  const linkElement = getByText(/Webshop - Production/);
+  const linkElement = getByText(/Webshop - Development/);
 
   expect(linkElement).toBeInTheDocument();
 });
