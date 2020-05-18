@@ -7,7 +7,7 @@ resource "kong_service" "react" {
 
 
 variable "basic_password" {
-  type = string
+  type = "string"
 }
 
 
