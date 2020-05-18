@@ -48,14 +48,14 @@ Sentry.init({
 
 function App() {
   console.log(process.env.NODE_ENV);
-  console.log(process.env.SERVERMODE);
+  console.log(process.env.SERVER_MODE);
   return (
     <div>
       <h1>Webshop - DevelopmentServer</h1>
       <Homepage />
       {/*       {process.env.NODE_ENV === 'development' ? <SentryComponent /> : ''}
        */}
-      {process.env.SERVERMODE === 'development' ? <SentryComponent /> : ''}
+      {process.env.SERVER_MODE === 'development' ? <SentryComponent /> : ''}
     </div>
   );
 }
