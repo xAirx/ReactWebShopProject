@@ -55,7 +55,7 @@ function App() {
   console.log('REACT_APP_SERVER_MODE', process.env.REACT_APP_SERVER_MODE);
   return (
     <div>
-      <h1>Webshop - Production</h1>
+      <h1>Webshop - Development</h1>
       <Homepage />
       {/*       {process.env.NODE_ENV === 'development' ? <SentryComponent /> : 'xx'}
        */}
