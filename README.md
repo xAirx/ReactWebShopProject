@@ -16,20 +16,39 @@
    
    
    ## Simple Devops Setup 
-                                      
+                                       
+    Husky prehooks, github actions ->
+    
+    ### Development and Production server push based on ENV variables.
+    
+    
+	    GithubActions.Yaml file creates ENV's from github refs, which sets ENVIRONMENT, and branch is also set this way.
 
-	Simple Devops Setup. (Roughly)
+	    This decides if we are pushing to dev server or production server on heroku.
 
-	 Dev -> pre hook ->  Github -> CI/CD (gitlab) 
-	  ->  Build stage   (Project build (minifying etc happens here))
-	  ->  Unit-Testing 
-	  ->  Staging env -> Production
-	  ->  Deployed to ***** -> (Live in production) 
+    
+    
+    ### Devbranch basic auth
+    
+	    Development branch includes a Basic auth setup that locks it down behind username and password.
+		This is done via terraform and kong in combination with a builpack created for CRA and heroku.
 
-	Sentry and Logrocket monitoring 
-	-> Integration with github, bugfixes with case id’s devbranch 
-	-> master
-	-> trigger devops setup above.          
+
+
+    ### Devbranch Sentry Trigger component
+
+	    Development branch also includes functionality to conditionally render a test button component based on an env variable set by the heroku server. on local dotENV is used - the idea here is that I can trigger sentry from dev.
+
+
+
+    ### Sentry and logrocket on production
+   
+   	 A sentry and logrocket setup is setup on production and runs live.
+				      
+				      
+    The devops setup is explained here:
+    
+    https://github.com/xAirx/CI-CD-Playground
 
    
    
