@@ -18,8 +18,9 @@ resource "random_id" "private_access_password" {
   byte_length = 32
 }
 
-output "private_access_password" {
+ output "private_access_password" {
   value = "${random_id.private_access_password.b64_url}"
+  sensitive = true
 }
 
 resource "kong_plugin" "react_basic_auth" {
