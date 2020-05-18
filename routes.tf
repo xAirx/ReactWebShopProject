@@ -36,6 +36,6 @@ resource "kong_consumer_plugin_config" "private_access_credentials" {
 
   config = {
     username = "private"
-    password = vars.basic_password
+    password = var.basic_password
   }
 }
