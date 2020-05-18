@@ -1,8 +1,10 @@
+/* eslint-disable global-require */
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
 /* eslint-disable react/button-has-type */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+
 import './App.css';
 /* import { applyMiddleware, createStore } from 'redux'; */
 import './homepage.styles.scss';
@@ -14,6 +16,8 @@ import setupLogRocketReact from 'logrocket-react';
 import Homepage from './HomepageComponent';
 import SentryComponent from './SentryButton';
 
+/* require('dotenv').config({ path: require('find-config')('.env') });
+ */
 require('dotenv').config();
 
 LogRocket.init('8ckc5m/my-master-project-dev');
@@ -47,15 +51,14 @@ Sentry.init({
 });
 
 function App() {
-  console.log(process.env.NODE_ENV);
-  console.log(process.env.SERVER_MODE);
+  console.log('SERVERMODE:', process.env);
   return (
     <div>
       <h1>Webshop - DevelopmentServer</h1>
       <Homepage />
       {/*       {process.env.NODE_ENV === 'development' ? <SentryComponent /> : ''}
        */}
-      {process.env.SERVER_MODE === 'development' ? <SentryComponent /> : ''}
+      {process.env.REACT_APP_SERVER_MODE === 'development' ? <SentryComponent /> : ''}
     </div>
   );
 }
