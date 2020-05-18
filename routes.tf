@@ -5,22 +5,16 @@ resource "kong_service" "react" {
   port     = 3000
 }
 
+
+variable "basic_password" {
+  type = string
+}
+
+
 resource "kong_route" "web_root" {
   protocols  = ["https", "http"]
   paths      = ["/"]
   service_id = "${kong_service.react.id}"
-}
-provider "random" {
-  version = "~> 2.0"
-}
-
-resource "random_id" "private_access_password" {
-  byte_length = 32
-}
-
-output "private_access_password" {
-  value = "${random_id.private_access_password.b64_url}"
-  sensitive = true
 }
 
 resource "kong_plugin" "react_basic_auth" {
@@ -42,6 +36,6 @@ resource "kong_consumer_plugin_config" "private_access_credentials" {
 
   config = {
     username = "private"
-    password = "${random_id.private_access_password.b64_url}"
+    password = vars.basic_password
   }
 }
