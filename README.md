@@ -32,6 +32,7 @@
     
 	    Development branch includes a Basic auth setup that locks it down behind username and password.
 		This is done via terraform and kong in combination with a builpack created for CRA and heroku.
+			https://medium.com/@nghnam/kong-configuration-management-with-terraform-52f47dee7c8
 
 
 
