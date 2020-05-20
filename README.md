@@ -2,6 +2,8 @@
 
   
  # ///////GIFS ////// 
+ 
+ 
   
  # Introduction to project and functionality 
  
@@ -10,10 +12,9 @@
 
 	  This is going to be a full stack app (MERN stack), using Firebase and Heroku hosting
 
-	   Deployment is on *****.........
+	   Deployment is on HEROKU.
 	   
-	   
-   
+	  
    
    ## Simple Devops Setup 
                                        
@@ -47,7 +48,7 @@
    	 A sentry and logrocket setup is setup on production and runs live.
 				      
 				      
-    The devops setup is explained here:
+    ### The devops setup is explained here:
     
    	 https://github.com/xAirx/CI-CD-Playground
 
