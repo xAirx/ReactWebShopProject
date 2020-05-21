@@ -7,13 +7,12 @@ import React from 'react';
 
 import './App.css';
 /* import { applyMiddleware, createStore } from 'redux'; */
-import './homepage.styles.scss';
 
 import * as Sentry from '@sentry/browser';
 // or using CommonJS
 import LogRocket from 'logrocket';
 import setupLogRocketReact from 'logrocket-react';
-import Homepage from './HomepageComponent';
+import Homepage from './pages/homepage/homepage.component';
 
 import SentryComponent from './SentryButton';
 
