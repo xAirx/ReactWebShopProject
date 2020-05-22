@@ -21,6 +21,8 @@ jobs:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: heroku container:login
       - name: Install Dependencies - yarn install
+        env:
+          SKIP_PREFLIGHT_CHECK: "true"
         run: yarn install
       - name: Unit tests - yarn test
         run: yarn test
