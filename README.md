@@ -11,7 +11,14 @@
 
 	   Deployment is on HEROKU.
 	   
-	
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;  
 
 # Hosting: 
 
@@ -132,7 +139,22 @@
 	
 
 
-
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;  
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;
+&nbsp; 
+&nbsp;  
 
 
 
