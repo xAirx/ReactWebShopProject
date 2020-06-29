@@ -117,11 +117,19 @@
       npm run storybook and open the address displayed (http://localhost:9009/). 
     
 	
+   #### Theming with storybook
    
+   	Material ui + Styled Components + MUI theme provider
+
+	https://medium.com/encode/setting-up-storybook-with-material-ui-and-styled-components-5bdacb6db866
+
+	
 
 
+## Styled Components & Themeprovider + Dark light mode toggle.
 
 
+	https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
 
 
 
