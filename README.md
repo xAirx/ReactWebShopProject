@@ -1,104 +1,102 @@
-# Ecommerce  Project
+# Ecommerce Project
 
-  
- # ///////GIFS ////// 
-  
- # Introduction to project and functionality 
- 
+# Introduction to project and functionality
 
-	  This is an  e-commerce application similar to Shopify using React, Redux, React Hooks, React Router, GraphQL, Context API,  Firebase, Redux-Saga, Stripe + more. 
+      This is an  e-commerce application similar to Shopify using React, Redux, React Hooks, React Router, GraphQL, Context API,  Firebase, Redux-Saga, Stripe + more.
+    
+      This is going to be a full stack app (MERN stack), using Firebase and Heroku hosting
+    
+       Deployment is on HEROKU.
 
-	  This is going to be a full stack app (MERN stack), using Firebase and Heroku hosting
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-	   Deployment is on *****.........
-	   
-	   
-   
-   
-   ## Simple Devops Setup 
-                                      
+# Hosting:
 
-	Simple Devops Setup. (Roughly)
+## Devops Setup
 
-	 Dev -> pre hook ->  Github -> CI/CD (gitlab) 
-	  ->  Build stage   (Project build (minifying etc happens here))
-	  ->  Unit-Testing 
-	  ->  Staging env -> Production
-	  ->  Deployed to ***** -> (Live in production) 
+    Husky prehooks, github actions ->
+    
+    ### Development and Production server push based on ENV variables.
 
-	Sentry and Logrocket monitoring 
-	-> Integration with github, bugfixes with case id’s devbranch 
-	-> master
-	-> trigger devops setup above.          
+## Devserver: (Requires LOGIN and password).
 
-   
-   
- ## Architecture (Roughly)
- 
-	- React Basics
+    https://webshopproject-development.herokuapp.com/
 
-	- React Router
 
-	- Redux
-
-	- Redux Saga
-
-	- Asynchronous Redux
-
-	- React Hooks
-
-	- Context API
-
-	- React Suspense + React Lazy
-
-	- Firebase
-
-	- Stripe API
-
-	- Styled-Components
-
-	- GraphQL
-
-	- Apollo
-
-	- PWAs
-
-	- React Performance
-
-	- React Design Patterns
-
-	- Testing with Jest, Enzyme and Snapshot testing
-
-	- React Best Practices
-
-	- Persistance + Session Storage
-
-	- State Normalization
+      ### Devbranch basic auth (password projected dev branch.
+    
+    	    Development branch includes a Basic auth setup that locks it down behind username and password.
+    		This is done via terraform and kong in combination with a builpack created for CRA and heroku.
+    			https://medium.com/@nghnam/kong-configuration-management-with-terraform-52f47dee7c8
 
 
 
+        ### Devbranch Sentry Trigger component
+    
+    	    Development branch also includes functionality to conditionally render a test button component based on an env variable set by the heroku server. on local dotENV is used - the idea here is that I can trigger sentry from dev.
 
-# DEVLOG 
-  
+## Production:
 
-
-
-
-
-
+    https://webshopproject-production.herokuapp.com/
 
 
 
+    ### Sentry and logrocket on production
 
+A sentry and logrocket setup is setup on production and runs live.
 
+    ### The devops setup is explained here:
 
+https://github.com/xAirx/CI-CD-Playground
 
+# Architecture (Roughly)
 
+    - React Basics
+    
+    - React Router
+    
+    - Redux
+    
+    - Redux Saga
+    
+    - Asynchronous Redux
+    
+    - React Hooks
+    
+    - Context API
+    
+    - React Suspense + React Lazy
+    
+    - Firebase
+    
+    - Stripe API
+    
+    - Styled-Components
+    
+    - GraphQL
+    
+    - Apollo
+    
+    - PWAs
+    
+    - React Performance
+    
+    - React Design Patterns
+    
+    - Testing with Jest, Enzyme and Snapshot testing
+    
+    - React Best Practices
+    
+    - Persistance + Session Storage
+    
+    - State Normalization
 
-
-
-
-
-
-
+# DEVLOG
 

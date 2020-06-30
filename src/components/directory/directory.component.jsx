@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import MenuItem from '../menu-item/menu-item.component';
-import './directory.styles.scss';
+/* import './directory.styles.scss';
+ */
+
+const DirectoryMenu = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
 
 class Directory extends Component {
   constructor() {
@@ -46,18 +55,17 @@ class Directory extends Component {
 
   render() {
     const { sections } = this.state;
-
     const MappedMenuItems = sections.map(({ title, imageUrl, id }) => (
       <MenuItem key={id} title={title} img={imageUrl} />
     ));
 
     return (
-      <div className="directory-menu">
+      <DirectoryMenu>
         {/* {this.state.sections.map(({ title, imageUrl, id }) => (
           <MenuItem key={id} title={title} />
         ))} */}
         {MappedMenuItems}
-      </div>
+      </DirectoryMenu>
     );
   }
 }
