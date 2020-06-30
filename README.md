@@ -94,6 +94,8 @@
 	- Stripe API
 
 	- Styled-Components
+	
+	- Storybook
 
 	- GraphQL
 
@@ -114,8 +116,6 @@
 	- State Normalization
 
 
-
-
 # DEVLOG 
  
 &nbsp; 
@@ -126,17 +126,6 @@
 &nbsp;
 &nbsp; 
 &nbsp;  
-
-
-
-## Styled Components & Themeprovider + Dark light mode toggle.
-
-
-	https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
-
-
-
-
 
 
 
