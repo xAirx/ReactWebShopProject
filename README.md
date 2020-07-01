@@ -40,7 +40,7 @@
                 https://webshopproject-development.herokuapp.com/
 
 
-                  ### Devbranch basic auth (password projected dev branch.
+#### Devbranch basic auth (password projected dev branch.
 
                       Development branch includes a Basic auth setup that locks it down behind username and password.
                         This is done via terraform and kong in combination with a builpack created for CRA and heroku.
@@ -48,7 +48,7 @@
 
 
 
-                    ### Devbranch Sentry Trigger component
+#### Devbranch Sentry Trigger component
 
                       Development branch also includes functionality to conditionally render a test button component based on an env variable set by the heroku server. on local dotENV is used - the idea here is that I can trigger sentry from dev.
 &nbsp;
@@ -64,14 +64,14 @@
                 https://webshopproject-production.herokuapp.com/
 
 
-                ### Sentry and logrocket on production
+#### Sentry and logrocket on production
 
             A sentry and logrocket setup is setup on production and runs live.
+            
 
-                ### The devops setup is explained here:
+#### The devops setup is explained here:
 
             https://github.com/xAirx/CI-CD-Playground
-
 
 
 
