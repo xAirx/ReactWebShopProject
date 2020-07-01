@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import { createGlobalStyle, css } from 'styled-components';
 import { color, typography } from './styles';
 
