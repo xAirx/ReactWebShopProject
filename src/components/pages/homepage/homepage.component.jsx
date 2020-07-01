@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './homepage.styles.scss';
 import Directory from '../../directory/directory.component';
+
+
+
+
 // we are using a functional component here since we arent going to have any state in this component or lifecycle methods.
 const HomePage = () => (
+
   <div className="homepage">
+
     <Directory />
   </div>
 );

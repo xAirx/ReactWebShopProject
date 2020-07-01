@@ -1,5 +1,4 @@
-/* eslint-disable import/no-unresolved */
-import { createGlobalStyle, css } from 'styled-components';
+/* import { createGlobalStyle, css } from 'styled-components';
 import { color, typography } from './styles';
 
 export const bodyStyles = css`
@@ -112,14 +111,42 @@ export const bodyStyles = css`
       opacity: 0;
     }
   }
-`;
+`; */
 
 // Allow design system consumers to access font settings but control how and
 // where they load the font.
-export const fontUrl = 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900&display=swap';
+/* export const fontUrl = 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900&display=swap';
 
 export const GlobalStyle = createGlobalStyle`
   body {
     ${bodyStyles}
+  }
+`; */
+
+// global.js
+// Source: https://github.com/maximakymenko/react-day-night-toggle-app/blob/master/src/global.js#L23-L41
+
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+  body {
+    align-items: center;
+    background: ${(props) => props.theme.body};
+    color: ${(props) => props.theme.text};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    transition: all 0.25s linear;
   }
 `;

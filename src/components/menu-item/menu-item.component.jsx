@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React,{useContext} from 'react';
 import './menu-items.styles.scss';
+import { ThemeContext } from 'styled-components'
+
 
 const MenuItem = ({ title, img }) => (
+
+
   <div
     className="menu-item"
     style={{

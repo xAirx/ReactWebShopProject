@@ -75,7 +75,7 @@ export const typography = {
     l3: 48,
     code: 90
   }
-} as const;
+};
 
 export const breakpoint = 600;
 export const pageMargin = 5.55555;
