@@ -106,8 +106,6 @@
 
     - Stripe API
 
-    - Styled-Components
-
     - GraphQL
 
     - Apollo
@@ -125,6 +123,19 @@
     - Persistance + Session Storage
 
     - State Normalization
+    
+    - Storybook, - Snapshot Testing.
+    
+    - Styled Components with theming and global styles.
+    
+    - Type Management with Typescript.
+    
+    - LogRocket and Sentry on production server
+    
+    - Password protected Dev server with terraform and kong.
+    
+    - CI/CD setup with Github actions. 
+    
 &nbsp;
 &nbsp;
 &nbsp;
