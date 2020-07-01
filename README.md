@@ -90,12 +90,6 @@
 
     - React Router
 
-    - Redux
-
-    - Redux Saga
-
-    - Asynchronous Redux
-
     - React Hooks
 
     - Context API
