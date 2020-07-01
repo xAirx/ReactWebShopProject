@@ -21,40 +21,68 @@
 
 ## Devops Setup
 
-    Husky prehooks, github actions ->
+                Husky prehooks, github actions ->
 
-    ### Development and Production server push based on ENV variables.
+                ### Development and Production server push based on ENV variables.
+                
+                
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;                
 
 ## Devserver: (Requires LOGIN and password).
 
-    https://webshopproject-development.herokuapp.com/
+                https://webshopproject-development.herokuapp.com/
 
 
-      ### Devbranch basic auth (password projected dev branch.
+                  ### Devbranch basic auth (password projected dev branch.
 
-    	    Development branch includes a Basic auth setup that locks it down behind username and password.
-    		This is done via terraform and kong in combination with a builpack created for CRA and heroku.
-    			https://medium.com/@nghnam/kong-configuration-management-with-terraform-52f47dee7c8
+                      Development branch includes a Basic auth setup that locks it down behind username and password.
+                        This is done via terraform and kong in combination with a builpack created for CRA and heroku.
+                              https://medium.com/@nghnam/kong-configuration-management-with-terraform-52f47dee7c8
 
 
 
-        ### Devbranch Sentry Trigger component
+                    ### Devbranch Sentry Trigger component
 
-    	    Development branch also includes functionality to conditionally render a test button component based on an env variable set by the heroku server. on local dotENV is used - the idea here is that I can trigger sentry from dev.
-
+                      Development branch also includes functionality to conditionally render a test button component based on an env variable set by the heroku server. on local dotENV is used - the idea here is that I can trigger sentry from dev.
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 ## Production:
 
-    https://webshopproject-production.herokuapp.com/
+                https://webshopproject-production.herokuapp.com/
+
+
+                ### Sentry and logrocket on production
+
+            A sentry and logrocket setup is setup on production and runs live.
+
+                ### The devops setup is explained here:
+
+            https://github.com/xAirx/CI-CD-Playground
 
 
 
-    ### Sentry and logrocket on production
 
-A sentry and logrocket setup is setup on production and runs live.
-
-    ### The devops setup is explained here:
-
-https://github.com/xAirx/CI-CD-Playground
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 # Architecture (Roughly)
 
@@ -97,17 +125,28 @@ https://github.com/xAirx/CI-CD-Playground
     - Persistance + Session Storage
 
     - State Normalization
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 # DEVLOG
 
-Added Storybook and Styled Components + proptypes + Typescript
+      Added Storybook and Styled Components + proptypes + Typescript
 
-Added Storybook, addons knobs, actions, and addon-info, actions, viewport addon, storysource, themes.
+      Added Storybook, addons knobs, actions, and addon-info, actions, viewport addon, storysource, themes.
 
-Added Styled Components and going to move on to adding theming with inclusion of storybook.
+      Added Styled Components and going to move on to adding theming with inclusion of storybook.
 
-Added Typescript typescript is currently used for defining consts in our shared folder containing our "global styles" for our styled components, styleguide.
+      Added Typescript typescript is currently used for defining consts in our shared folder containing our "global styles" for our styled components, styleguide.
 
-Added Types for styledcomponents @types/styled-components
+      Added Types for styledcomponents @types/styled-components
 
-Refactored Sentry component away from app.js and tested it works.
+      Refactored Sentry component away from app.js and tested it works.
+
+      Added TS for ESLINT and Configs.
+
+      Added Snapshot testing for Storybook and npmtest, for uniformity. between components and storybook.
