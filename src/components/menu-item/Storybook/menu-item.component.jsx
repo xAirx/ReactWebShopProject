@@ -9,7 +9,7 @@ const MenuItem = ({ title, img }) => (
       backgroundImage: `url(${img})`,
       backgroundSize: 'cover',
       /* height: '100vh', */
-      color: 'white',
+      color: 'black'
     }}
   >
     <div className="content">

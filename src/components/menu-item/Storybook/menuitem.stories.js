@@ -6,7 +6,7 @@ import MenuItem from './menu-item.component';
 
 export default {
   title: 'MenuItem',
-  component: MenuItem,
+  component: MenuItem
 };
 
 export const item = () => <MenuItem />;

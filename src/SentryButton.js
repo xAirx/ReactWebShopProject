@@ -34,7 +34,7 @@ Sentry.init({
       Sentry.showReportDialog({ eventId: event.event_id });
     }
     return event;
-  },
+  }
 });
 
 export class SentryButton extends Component {
