@@ -2,7 +2,7 @@
 
 # Introduction to project and functionality
 
-      This is an  e-commerce application similar to Shopify using React, Redux, React Hooks, React Router, GraphQL, Context API,  Firebase, Redux-Saga, Stripe + more.
+      This is an  e-commerce application similar to Shopify using React, React Hooks, React Router, GraphQL, Context API,  Firebase,  Redux, Redux-Saga, Context API + Stripe + more.
 
       This is going to be a full stack app (MERN stack), using Firebase and Heroku hosting
 
@@ -84,15 +84,17 @@
 &nbsp;
 &nbsp;
 
-# Architecture (Roughly)
+# Architecture, patterns and technologies (Roughly)
 
     - React Basics
+    
+    - Redux
 
     - React Router
 
     - React Hooks
 
-    - Context API
+    - Context API + (FaCC // RenderProps patterns)
 
     - React Suspense + React Lazy
 
@@ -103,27 +105,17 @@
     - GraphQL
 
     - Apollo
-
-    - PWAs
-
-    - React Performance
-
-    - React Design Patterns
-
+    
     - Testing with Jest, Enzyme and Snapshot testing
-
-    - React Best Practices
 
     - Persistance + Session Storage
 
-    - State Normalization
+    - State Normalization  
     
     - Storybook, - Snapshot Testing.
     
-    - Styled Components with theming and global styles.
-    
-    - Type Management with Typescript.
-    
+    - SCSS + Styled Components with theming and global styles. + styled theming
+        
     - LogRocket and Sentry on production server
     
     - Password protected Dev server with terraform and kong.
@@ -138,6 +130,8 @@
 &nbsp;
 &nbsp;
 &nbsp;
+
+
 # DEVLOG
 
       Added Storybook and Styled Components + proptypes + Typescript
@@ -146,13 +140,7 @@
 
       Added Styled Components and going to move on to adding theming with inclusion of storybook.
 
-      Added Typescript typescript is currently used for defining consts in our shared folder containing our "global styles" for our styled components, styleguide.
-
-      Added Types for styledcomponents @types/styled-components
-
       Refactored Sentry component away from app.js and tested it works.
-
-      Added TS for ESLINT and Configs.
 
       Added Snapshot testing for Storybook and npmtest, for uniformity. between components and storybook.
       
