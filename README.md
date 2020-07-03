@@ -148,7 +148,7 @@
 
 				#### What is Styled theming  - done
                               
-                        ##### Light and Darkmode functionalty with context API & Hooks.
+                                ##### Light and Darkmode functionalty with context API & Hooks.
                            
 
 				----------------Storybook -----------------
