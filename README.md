@@ -88,13 +88,13 @@
 
     - React Basics
     
-    - Redux
+    - Redux (persisting data + storage) + State Normalization  
 
     - React Router
 
     - React Hooks
 
-    - Context API + (FaCC // RenderProps patterns)
+    - Context API (I18N solution)
 
     - React Suspense + React Lazy
 
@@ -107,14 +107,10 @@
     - Apollo
     
     - Testing with Jest, Enzyme and Snapshot testing
-
-    - Persistance + Session Storage
-
-    - State Normalization  
     
     - Storybook, - Snapshot Testing.
     
-    - SCSS + Styled Components with theming and global styles. + styled theming
+    - SCSS + Styled Components with theming and global styles. + styled theming (light and dark theme aswell)
         
     - LogRocket and Sentry on production server
     
@@ -128,6 +124,49 @@
 &nbsp;
 &nbsp;
 &nbsp;
+&nbsp;
+&nbsp;
+
+
+# Techonologies and Patterns to be explored:
+
+
+				#### The slot pattern
+
+				####  Higher order components
+			
+				#### RenderProps vs React Hooks 
+
+				#### Render Props vs Hooks vs HOC-------- 
+
+				#### Context API vs Redux----------
+                        
+                        
+				--------------Theming with Styled Components context API + Hooks + Dark light  mode---------------
+
+				#### What is the Theme Provider ?
+
+				#### What is Styled theming  - done
+                              
+                        ##### Light and Darkmode functionalty with context API & Hooks.
+                           
+
+				----------------Storybook -----------------
+
+				#### Storybook Snapshot Testing
+
+				#### Storybook Addons
+
+				#### Add ThemeProvider and Connect with storybook.
+
+				#### Storybook Theme Playground
+                        
+                        
+                        
+                        --------------- Shoppingcard with react DND --------
+
+
+
 &nbsp;
 &nbsp;
 
