@@ -163,7 +163,7 @@
                         
                         
                         
-                        --------------- Shoppingcard with react DND --------
+                        --------------- Shoppingcart with react DND --------
 
 
 
