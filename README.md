@@ -1,21 +1,5 @@
-# Ecommerce Project
+# Example Project
 
-# Introduction to project and functionality
-
-      This is an  e-commerce application similar to Shopify using React, React Hooks, React Router, GraphQL, Context API,  Firebase,  Redux, Redux-Saga, Context API + Stripe + more.
-
-      This is going to be a full stack app (MERN stack), using Firebase and Heroku hosting
-
-       Deployment is on HEROKU.
-
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 # Hosting:
 
