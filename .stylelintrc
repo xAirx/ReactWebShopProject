@@ -9,6 +9,6 @@
     'unit-no-unknown': true,
     'string-quotes': double,
     'indentation': 'tab',
-
+	'max-nesting-depth': 4,
   }
 }

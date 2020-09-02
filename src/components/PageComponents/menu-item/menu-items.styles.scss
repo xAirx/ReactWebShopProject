@@ -1,6 +1,6 @@
 .menu-item {
 	align-items: center;
-	border: 1px solid black;
+	border: 1px solid #0000;
 	display: flex;
 	// Makes it fill the entire box
 	flex: 1 1 auto;
@@ -25,7 +25,7 @@
      */
 	.content {
 		align-items: center;
-		border: 1px solid black;
+		border: 1px solid #0000;
 		display: flex;
 		flex-direction: column;
 		// I will have a height of 90px, i will be column directed and centered with
