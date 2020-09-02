@@ -1,0 +1,49 @@
+.menu-item {
+	align-items: center;
+	border: 1px solid #0000;
+	display: flex;
+	// Makes it fill the entire box
+	flex: 1 1 auto;
+	height: 240px;
+	justify-content: center;
+	margin: 0 7.5px 15px;
+	/*   I will be max 30% wide and 240px tall in my parent div
+      With flex 1,1 auto i fill the entire menu item div
+      as well as being centered with align items and justify content */
+	min-width: 30%;
+
+	// Anywhere the menu item is the first child we get :
+	&:first-child {
+		margin-right: 7, 5px;
+	}
+
+	&:last-child {
+		margin-right: 7, 5px;
+	}
+
+	/*   .menu-item .content
+     */
+	.content {
+		align-items: center;
+		border: 1px solid #0000;
+		display: flex;
+		flex-direction: column;
+		// I will have a height of 90px, i will be column directed and centered with
+		//align items and justify content
+		height: 90px;
+		justify-content: center;
+		padding: 0 25px;
+
+		.title {
+			color: #4a4a4a;
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: 6px;
+		}
+
+		.subtitle {
+			font-size: 16px;
+			font-weight: lighter;
+		}
+	}
+}
