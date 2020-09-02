@@ -13,6 +13,7 @@ jobs:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/development')
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      SKIP_PREFLIGHT_CHECK : true
 
     steps:
       - uses: actions/checkout@v1
