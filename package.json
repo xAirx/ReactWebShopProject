@@ -67,7 +67,6 @@
 		"@typescript-eslint/parser": "^4.0.1",
 		"babel-eslint": "^10.1.0",
 		"babel-preset-expo": "~8.1.0",
-		"eslint": "^7.8.0",
 		"eslint-config-airbnb": "^17.1.1",
 		"eslint-config-wesbos": "0.0.19",
 		"eslint-import-resolver-typescript": "^2.2.1",
