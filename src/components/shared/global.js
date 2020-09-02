@@ -138,8 +138,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     align-items: center;
-    background: ${(props) => props.theme.body};
-    color: ${(props) => props.theme.text};
+    background: ${props => props.theme.body};
+    color: ${props => props.theme.text};
     display: flex;
     flex-direction: column;
     justify-content: center;

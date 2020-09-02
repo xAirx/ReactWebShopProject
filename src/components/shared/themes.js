@@ -10,7 +10,7 @@ export const lightTheme = {
   h1color: 'red',
   h1Size: '10px',
   toggleBorder: '#FFF',
-  gradient: 'linear-gradient(#39598A, #79D7ED)'
+  gradient: 'linear-gradient(#39598A, #79D7ED)',
 };
 
 export const darkTheme = {
@@ -19,5 +19,5 @@ export const darkTheme = {
   h1Size: '10px',
   text: '#FAFAFA',
   toggleBorder: '#6B8096',
-  gradient: 'linear-gradient(#091236, #1E215D)'
+  gradient: 'linear-gradient(#091236, #1E215D)',
 };
