@@ -10,7 +10,7 @@ import './App.css';
 
 // / Importing themes and themeprovider
 import { ThemeProvider } from 'styled-components';
-import { darkTheme, lightTheme } from './components/shared/themes.js';
+import { darkTheme /* lightTheme */ } from './components/shared/themes.js';
 import { GlobalStyle } from './components/shared/global.js';
 import Homepage from './components/pages/homepage/homepage.component';
 import SentryComponent from './SentryButton.js';
