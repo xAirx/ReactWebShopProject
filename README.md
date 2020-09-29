@@ -1,5 +1,35 @@
 # Example Project
 
+# Learning Material:
+
+		Passing props via styled components and react router
+
+		https://stackoverflow.com/questions/52321539/react-passing-props-with-styled-components
+
+		https://medium.com/@bopaiahmd.mca/how-to-pass-props-using-link-and-navlink-in-react-router-v4-75dc1d9507b4
+
+		https://duckduckgo.com/?t=ffab&q=Pass+props+via+React+Router&atb=v1-1&ia=web
+
+		https://reactgo.com/react-router-pass-props/
+
+		https://learnwithparam.com/blog/how-to-pass-props-in-react-router/
+
+		Article: React Lazy — Optimizing Bundle Size
+
+		React Lazy — Optimizing Bundle Size
+
+		https://flip.it/9DBj8I
+
+		Pre-Caching Image with React Suspense
+
+		https://css-tricks.com/pre-caching-image-with-react-suspense/
+
+		Article: React Sight — Visualise your React apps
+
+		React Sight — Visualise your React apps
+
+		https://flip.it/k2Lp06
+
 
 # Hosting:
 
@@ -157,9 +187,6 @@
 
 # DEVLOG
 
-      Added Storybook and Styled Components + proptypes + Typescript
-
-      Added Storybook, addons knobs, actions, and addon-info, actions, viewport addon, storysource, themes.
 
       Added Styled Components and going to move on to adding theming with inclusion of storybook.
 
