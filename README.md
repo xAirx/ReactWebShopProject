@@ -1,77 +1,5 @@
-# Example Project
+# WebShop Project
 
-# TODO: Extra Learning Material:
-
-
-https://docs.google.com/document/d/1ahO4Cqlh8JsIX_cLGTgma_1ZouxlJY7fO9E2OrF5vf0/edit#
-
-
-# Hosting:
-
-## Devops Setup
-
-                Husky prehooks, github actions ->
-
-                ### Development and Production server push based on ENV variables.
-                
-                
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;                
-
-## Devserver: (Requires LOGIN and password).
-
-                https://webshopproject-development.herokuapp.com/
-
-
-#### Devbranch basic auth (password projected dev branch.
-
-                      Development branch includes a Basic auth setup that locks it down behind username and password.
-                        This is done via terraform and kong in combination with a builpack created for CRA and heroku.
-                              https://medium.com/@nghnam/kong-configuration-management-with-terraform-52f47dee7c8
-
-
-
-#### Devbranch Sentry Trigger component
-
-                      Development branch also includes functionality to conditionally render a test button component based on an env variable set by the heroku server. on local dotENV is used - the idea here is that I can trigger sentry from dev.
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-## Production:
-
-                https://webshopproject-production.herokuapp.com/
-
-
-#### Sentry and logrocket on production
-
-            A sentry and logrocket setup is setup on production and runs live.
-            
-
-#### The devops setup is explained here:
-
-            https://github.com/xAirx/CI-CD-Playground
-
-
-
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 # Architecture, patterns and technologies (Roughly)
 
@@ -115,46 +43,74 @@ https://docs.google.com/document/d/1ahO4Cqlh8JsIX_cLGTgma_1ZouxlJY7fO9E2OrF5vf0/
 &nbsp;
 &nbsp;
 &nbsp;
+&nbsp;
+
+# Hosting:
+
+## Devops Setup
+
+                Husky prehooks, github actions ->
+
+                ### Development and Production server push based on ENV variables.
+                
+                
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;                
+
+#### The devops setup is explained here:
+
+            https://github.com/xAirx/CI-CD-Playground
+	    
+## Devserver: (Requires LOGIN and password).
+
+                https://webshopproject-development.herokuapp.com/
+		
+		Command:  heroku run terraform output private_access_password —app webshopproject-development
 
 
-# Techonologies and Patterns to be explored:
+#### Devbranch basic auth (password projected dev branch.
+
+                       Development branch includes a Basic auth setup that locks it down behind username and password.
+                       
+		       This is done via terraform and kong in combination with a buildpack created for CRA and heroku.
+                       
+
+#### Devbranch Sentry Trigger component
+
+                      Development branch also includes functionality to conditionally render a test button component based on an env variable set by the heroku 		      server. on local dotENV is used - the idea here is that I can trigger sentry from dev.
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+## Production:
+
+                https://webshopproject-production.herokuapp.com/
 
 
-				#### The slot pattern
+#### Sentry and logrocket on production
 
-				####  Higher order components
-			
-				#### RenderProps vs React Hooks 
-
-				#### Render Props vs Hooks vs HOC-------- 
-
-				#### Context API vs Redux----------
-                        
-                        
-				--------------Theming with Styled Components context API + Hooks + Dark light  mode---------------
-
-				#### What is the Theme Provider ?
-
-				#### What is Styled theming  - done
-                              
-                                ##### Light and Darkmode functionalty with context API & Hooks.
-                           
-
-				----------------Storybook -----------------
-
-				#### Storybook Snapshot Testing
-
-				#### Storybook Addons
-
-				#### Add ThemeProvider and Connect with storybook.
-
-				#### Storybook Theme Playground
-                        
-                        
-                        
-                        --------------- Shoppingcart with react DND --------
+            A sentry and logrocket setup is setup on production and runs live.
+            
 
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 &nbsp;
 &nbsp;
@@ -163,12 +119,10 @@ https://docs.google.com/document/d/1ahO4Cqlh8JsIX_cLGTgma_1ZouxlJY7fO9E2OrF5vf0/
 # DEVLOG
 
 
-      Added Styled Components and going to move on to adding theming with inclusion of storybook.
-
       Refactored Sentry component away from app.js and tested it works.
-
-      Added Snapshot testing for Storybook and npmtest, for uniformity. between components and storybook.
       
-      Added custom context provider for I18N functionality.
+      Installed styled components.
+
+    
       
       
